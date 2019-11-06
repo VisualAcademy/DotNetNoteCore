@@ -58,6 +58,12 @@ namespace DotNetNoteCore
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+
+                //endpoints.MapGet("/hello/{world}", async context =>
+                //{
+                //    var world = (string)context.Request.RouteValues["world"];
+                //    await context.Response.WriteJsonAsync(world);
+                //});
             });
         }
     }
